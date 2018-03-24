@@ -18,6 +18,9 @@
 	<nav class="my-2 my-md-0 mr-md-3">
 		<?php
 			if(is_user_logged_in()){
+			    if(is_admin()){
+			        echo "<a class=\"p-2 text-dark\" href=\"user-list.php\">User</a>";
+                }
 		?>
 		<a class="p-2 text-dark" href="task-list.php">My task List</a>
 		<a class="p-2 text-dark" href="add-task.php">Add New Task</a>

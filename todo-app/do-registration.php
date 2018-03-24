@@ -10,7 +10,7 @@ if(!empty($_POST['name']) && $_POST['email'] && $_POST['password']){
 	$result = mysqli_query($con, $query);
 	if($user_id = mysqli_insert_id($con)){
 		$_SESSION['user_id'] = $user_id;
-		header("Location: add-task.php");
+		header("Location: task-list.php");
 		die();
 	}
 
